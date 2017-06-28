@@ -2,72 +2,86 @@
 <html>
 <head>
 <style>
-.button {
-    background-color: #4CAF50 !important;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+
+/*
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
 }
-h {
-font-family: Garamond;
-font-size: 30px;
+*/
+
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+	font-family: Garamond;
+    padding: 1em;
+    color: white;
+    background-color: #cce6ff;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 100px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
 </style>
-
-<script>
-	
-</script>
-
 </head>
-
-
 <body>
-<center><h> Karis Kim </h>
+
+<div class="container">
+
+<header>
+   <h1>Karis Kim</h1>
+</header>
+  
 <nav>
-<button id="Home" type="button" onclick="myFunction()">Home</button>
- <button type="button" onclick="myFunction()">Projects</button>
- <button type="button" onclick="myFunction()">Associations</button>
- <button type="button" onclick="myFunction()">Contact</button>
-
-
- <span onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"> home </span>
- <hr>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Associations</a></li>
+  </ul>
 </nav>
 
-
-<h style="font-family:Garamond;font-size:20px;"><b>Biography</b></h1>
-<p style="font-family:Century Gothic;font-size:15px;">I am Korean-American, and often, because of my ethinicity, racial prejudices
+<article>
+  <h1>About Me</h1>
+  <p>I am Korean-American, and often, because of my ethinicity, racial prejudices
  create disadvantages for me. As an Asian woman, many assume that I am passive and submissive, and because of that,
  I am constantly trying to prove myself. This time spent trying to convince others that I am a candidate worthy of
  being recognized results in time wasted. Instead I could be making improvements and advancements to human rights and
  reshaping the way women are viewed.</p>
-<p style="font-family:Century Gothic;font-size:15px">I enjoy eating new things. In fact, I have even tried escargot! I am ambitious
- in the things I want to achieve and I am always looking forward to the future. I am confident in the advancement of women's rights
- because I, along with my peers, are striving to break those social barriers. In the history of the United States, with every advancement
- for the country, women have spoken out, demanding for representation alongside the men of the nation. The taking down of the traditional
- domestic sphere was one of the first large advancements, and resulted in more progress regarding women's rights.</p>
-<p style="font-size:25px;">I hope that I can be a pioneer for women's rights and a role model for girls all over the world. </p>
-</center>
-<p id="demo"></p>
-<script>
- function myFunction() {
-    document.getElementById("demo").innerHTML = "This is where you can learn about me as a web developer.";
-}
-</script>
- 
- 
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</article>
 
+<footer>Copyright &copy; W3Schools.com</footer>
 
- 
+</div>
 
-
-</body>
-</html>
 </body>
 </html>
